@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Roland Silva">
-    <meta name="" description" content="describes the site">
+    <meta name="description" content="describes the site">
     <title>My First Web Page</title>
     <link rel="icon" href="html5.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
@@ -43,8 +43,8 @@
 </head>
 
 <body>
-    <header class="h1_HTML_lesson_01">
-        <div>YT HTML Gray Lesson 01 </div>
+    <header class="h1_HTML_lesson">
+        <div>HTML Gray Lesson 04 </div>
     </header>
     <main>
         <h1>Hello World!</h1>
@@ -55,25 +55,62 @@
         <p>This is my first web page.</p>
 
         <h3>My Daily Schedule</h3>
-        <p>Let me tell you how I...
-
+        <!-- <p>Let me tell you how I...
             <br>.... I learn more about WebDev.
             <br>.... I plan out my schedule.
             <br>.... I use resources from MDN.
-        </p>
+        </p> -->
+        <!-- <p>Let me tell you how I...
+            <br>&nbsp;&nbsp;&nbsp;.... I learn more about WebDev.
+            <br>&nbsp;&nbsp;&nbsp;.... I plan out my schedule.
+            <br>&nbsp;&nbsp;&nbsp;.... I use resources from <abbr title="Mozilla Developers Network">MDN.</abbr>
+        </p> -->
+        <p style="color: green; font-weight: bold; font-style: italic; padding: 0.2rem 0rem;">Let me tell you how: </p>
+        <ol>
+            <li>...I learn more about WebDev.</li>
+            <li>...I plan out my schedule.</li>
+            <li>...I use resources from <abbr title="Mozilla Developers Network">MDN.</abbr></li>
+        </ol>
+
 
         <hr>
 
         <h2>I am also planning a vacation.</h2>
-        <p>I've been working hard and need a getaway.</p>
-        <p>I live in Kansas so I want to visit a beach.</p>
+        <p>I've been working hard and <em>really need a getaway.</em></p>
+        <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
 
         <h3>Places I'd like to visit.</h3>
-        <p>I've heard good things about the Carribean.</p>
+        <ul>
+            <li>
+                <p>I've heard good things about the <strong>Caribbean</strong>.</p>
+            </li>
+            <li>
+                <p>I've heard good things about going here:</p>
+                <address>
+                    Cancun Hard Rock Resort<br>
+                    Cancun, Puerto Cancun<br>
+                    Mexico 77580
+                </address>
+            </li>
+        </ul>
 
-        <h3>Places I'd like to avoid.</h3>
-        <p>Any place cold!!!.</p>
+        <!-- TODO: add more places-->
 
+        <h3>Places I want to avoid.</h3>
+        <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong>cold</strong></dd>
+
+            <dt>South Pole</dt>
+            <dd>This is also cold.</dd>
+
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold.</dd>
+        </dl>
+
+        <hr>
+
+        &lt;&lt;&lt; &copy; Roland Silva &gt;&gt;&gt;
     </main>
 </body>
 
