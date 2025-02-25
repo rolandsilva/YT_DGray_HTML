@@ -7,7 +7,7 @@
     <meta name="description" content="describes the site">
     <title>My First Web Page</title>
     <link rel="icon" href="html5.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
     <!-- <style>
         html {
             font-size: 22px;
@@ -16,22 +16,6 @@
         body {
             background-color: #333;
             color: whitesmoke;
-        }
-
-        .h1_HTML_lesson_01 {
-            width: 90%;
-            padding: 10px 0;
-            font-size: 2rem;
-            text-align: center;
-            /* margin: 0px 0 0px 0; */
-            margin: 0 auto;
-            background-color: rgb(43, 173, 199);
-            border: 3px solid black;
-            /* border: 1px solid black; */
-        }
-
-        .h1_HTML_lesson_01 div {
-            font-size: inherit;
         }
 
         main {
@@ -47,52 +31,76 @@
         <div>HTML Gray Lesson 04 </div>
     </header>
     <main>
-        <h1>Hello World!</h1>
+        <h1>My goals for the year &nbsp; </h1>
 
         <hr>
 
-        <h2>I am ready to learn HTML.</h2>
-        <p>This is my first web page.</p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#html">Learning HTML.</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning a vacation.</a>
+                </li>
+            </ul>
+        </nav>
 
-        <h3>My Daily Schedule</h3>
-        <!-- <p>Let me tell you how I...
+        <hr>
+
+        <section id="html">
+            <h2>I am ready to learn HTML.</h2>
+            <p>This is my first web page.</p>
+
+            <h3>My Daily Schedule</h3>
+            <!-- <p>Let me tell you how I...
             <br>.... I learn more about WebDev.
             <br>.... I plan out my schedule.
             <br>.... I use resources from MDN.
         </p> -->
-        <!-- <p>Let me tell you how I...
+            <!-- <p>Let me tell you how I...
             <br>&nbsp;&nbsp;&nbsp;.... I learn more about WebDev.
             <br>&nbsp;&nbsp;&nbsp;.... I plan out my schedule.
             <br>&nbsp;&nbsp;&nbsp;.... I use resources from <abbr title="Mozilla Developers Network">MDN.</abbr>
         </p> -->
-        <p style="color: green; font-weight: bold; font-style: italic; padding: 0.2rem 0rem;">Let me tell you how: </p>
-        <ol>
-            <li>...I learn more about WebDev.</li>
-            <li>...I plan out my schedule.</li>
-            <li>...I use resources from <abbr title="Mozilla Developers Network">MDN.</abbr></li>
-        </ol>
-
+            <p style="color: green; font-weight: bold; font-style: italic; padding: 0.2rem 0rem;">Let me tell you how:
+            </p>
+            <ol>
+                <li>...I learn more about WebDev.</li>
+                <li>...I plan out my schedule.</li>
+                <li>...I use resources from <abbr title="Mozilla Developers Network"><a href="https://www.mozilla.org">
+                            MDN</a></abbr>.</li>
+            </ol>
+            <br>
+        </section>
 
         <hr>
 
-        <h2>I am also planning a vacation.</h2>
-        <p>I've been working hard and <em>really need a getaway.</em></p>
-        <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
+        <section id="vacation">
+            <h2>I am also planning a vacation.</h2>
+            <p>I've been working hard and <em>really need a getaway.</em></p>
+            <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
 
-        <h3>Places I'd like to visit.</h3>
-        <ul>
-            <li>
-                <p>I've heard good things about the <strong>Caribbean</strong>.</p>
-            </li>
-            <li>
-                <p>I've heard good things about going here:</p>
-                <address>
-                    Cancun Hard Rock Resort<br>
-                    Cancun, Puerto Cancun<br>
-                    Mexico 77580
-                </address>
-            </li>
-        </ul>
+            <h3>Places I'd like to visit.</h3>
+            <ul>
+                <li>
+                    <p>I've heard good things about the <strong>Caribbean</strong>.</p>
+                </li>
+                <li>
+                    <p>I've heard good things about going here:</p>
+                    <address>
+                        Cancun Hard Rock Resort<br>
+                        Cancun, Puerto Cancun<br>
+                        Mexico 77580
+                    </address>
+                </li>
+            </ul>
+            <br>
+        </section>
+
+        <hr>
+
+        <br>
 
         <!-- TODO: add more places-->
 
@@ -109,8 +117,15 @@
         </dl>
 
         <hr>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
 
-        &lt;&lt;&lt; &copy; Roland Silva &gt;&gt;&gt;
+        &lt;&lt;&lt; &copy; <a href="about.html">&nbsp; Roland Silva &nbsp; </a> &gt;&gt;&gt;
+
+        <br>
+        <br>
+
     </main>
 </body>
 

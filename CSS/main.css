@@ -64,14 +64,46 @@ p {
     padding: 0.2rem 0rem;
 }
 
+
+a {
+    color: lightblue;
+}
+
+a:visited {
+    color: limegreen;
+}
+
+a:hover,
+a:focus {
+    color: red;
+}
+
+a:active {
+    color: orange;
+}
+
 ol {
-    list-style-type: decimal;
+    list-style-type: upper-roman;
     margin-left: 20px;
     text-align: left;
 }
 
+ol li::marker {
+    color: red;
+    /* Change marker color */
+    font-size: 1.2em;
+    /* Make marker bigger */
+    /* content: "🔥 "; */
+    /* Custom emoji marker */
+}
+
 ul {
+    list-style-type: circle;
     margin-left: 40px;
+}
+
+ul li::marker {
+    color: rgb(208, 255, 0)
 }
 
 dl {

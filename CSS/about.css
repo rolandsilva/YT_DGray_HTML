@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 22px;
+}
+
+body {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+.h1_HTML_lesson {
+    width: 90%;
+    padding: 10px 0;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0px 0 0px 0;
+    margin: 0 auto;
+    background-color: rgb(43, 173, 199);
+    border: 3px solid black;
+}
+
+
+
+.h1_HTML_lesson div {
+    font-size: inherit;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 5%;
+}
+
+hr {
+    margin: 10px 0px;
+    border: none;
+    height: 2px;
+    background-color: lightgray;
+}
+
+h1 {
+    color: red;
+    padding: 0.2rem 0rem;
+}
+
+h2 {
+    color: lightblue;
+    padding: 0.2rem 0rem;
+}
+
+h3 {
+    color: lightcoral;
+    padding: 0.2rem 0rem;
+}
+
+
+p {
+    padding: 0.2rem 0rem;
+}
+
+
+a:link {
+    color: lightblue;
+}
+
+a:visited {
+    color: limegreen;
+}
+
+a:hover,
+a:focus {
+    color: red;
+}
+
+a:active {
+    color: orange;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    text-align: left;
+}
+
+ul {
+    margin-left: 40px;
+}
+
+dl {
+    margin-left: 20px;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 10px;
+    padding-left: 5px;
+}
