@@ -35,8 +35,16 @@ header {
     width: 90%;
     margin: 0 auto;
     text-align: left;
-    padding-top: 5%;
+    padding-top: 2%;
 }
+
+/* header h1 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 2%;
+    text-align: center;
+} */
 
 main {
     width: 90%;
@@ -141,7 +149,7 @@ ol li::marker {
 
 ul {
     list-style-type: circle;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 ul li::marker {
