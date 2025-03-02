@@ -27,15 +27,19 @@
 </head>
 
 <body>
-    <header class="h1_HTML_lesson">
-        <div>HTML Gray Lesson 05 </div>
-    </header>
-    <main>
+    <section class="HTML_lesson_banner">
+        HTML Gray &nbsp; Lesson 07 &nbsp; Semantic HTML
+        <!-- <div>HTML Gray &nbsp; Lesson 06 &nbsp; images </div> -->
+    </section>
+    <header>
         <h1>My goals for the year &nbsp; </h1>
 
         <hr>
 
-        <nav>
+        <nav aria-label="primary-navigation">
+            <!-- allows naviagtion by the aria-label -->
+            <!-- <nav aria-labelledby="primary-navigation">
+            <h2 id="primary-navigation">Primary Navigation</h2> -->
             <ul>
                 <li>
                     <a href="#html">Learning HTML.</a>
@@ -45,12 +49,27 @@
                 </li>
             </ul>
         </nav>
-
         <hr>
+    </header>
 
+    <main>
         <section id="html">
             <h2>I am ready to learn HTML.</h2>
             <p>This is my first web page.</p>
+            <br>
+            <!-- <img src="img/html5 icon.png" alt="HTML5 Icon" title="I am learning HTML5" width="200"
+                height="200"> -->
+            <img class="html5img" src="img/html5_icon.png" alt="HTML5 Icon" title="I am learning HTML5">
+            <figure>
+                <figcaption>
+                    An example of HTML5 code
+                </figcaption>
+                <p>
+                    <code>&lt;h1&gt;Hello World&lt;h1&gt;</code>
+                </p>
+            </figure>
+            <br>
+            <br>
 
             <h3>My Daily Schedule</h3>
             <!-- <p>Let me tell you how I...
@@ -81,18 +100,40 @@
             <p>I've been working hard and <em>really need a getaway.</em></p>
             <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
 
+            <br>
             <h3>Places I'd like to visit.</h3>
             <ul>
                 <li>
                     <p>I've heard good things about the <strong>Caribbean</strong>.</p>
+                    <figure>
+
+                        <img src="img/cancunbeach.jpeg" class="hrcancunimg" alt="Picture of Hard Rock Cancun"
+                            loading="lazy">
+
+                        <figcaption class="caption">
+                            Hard Rock Resort Beach entrance
+                        </figcaption>
+
+                    </figure>
+                    <br>
                 </li>
+
                 <li>
                     <p>I've heard good things about going here:</p>
+
                     <address>
                         Cancun Hard Rock Resort<br>
                         Cancun, Puerto Cancun<br>
                         Mexico 77580
                     </address>
+
+                    <figure>
+                        <img src="img/mecoconut.jpeg" class="coconutimg" alt="Coconut picture"
+                            title="Me with a coconut by the pool" loading="lazy">
+                        <figcaption class="caption">
+                            Me by the pool with a coconut drink
+                        </figcaption>
+                    </figure>
                 </li>
             </ul>
             <br>
@@ -115,18 +156,23 @@
             <dt>Mountain Tops</dt>
             <dd>These are also cold.</dd>
         </dl>
-
+        <br>
         <hr>
+    </main>
+
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">&nbsp; Roland Silva &nbsp; </a> &gt;&gt;&gt;
+        </p>
+
         <p>
             <a href="#">Back to Top</a>
         </p>
 
-        &lt;&lt;&lt; &copy; <a href="about.html">&nbsp; Roland Silva &nbsp; </a> &gt;&gt;&gt;
-
         <br>
         <br>
+    </footer>
 
-    </main>
 </body>
 
 </html>

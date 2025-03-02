@@ -11,10 +11,11 @@ html {
 body {
     background-color: #333;
     color: whitesmoke;
+    padding: 10px;
 }
 
-.h1_HTML_lesson {
-    width: 90%;
+.HTML_lesson_banner {
+    width: 100%;
     padding: 10px 0;
     font-size: 2rem;
     text-align: center;
@@ -26,15 +27,30 @@ body {
 
 
 
-.h1_HTML_lesson div {
+/* .h1_HTML_lesson div {
     font-size: inherit;
-}
+} */
 
-main {
-    width: 80%;
+header {
+    width: 90%;
     margin: 0 auto;
     text-align: left;
     padding-top: 5%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 5%;
+}
+
+footer {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 1rem;
+    text-align: center;
 }
 
 hr {
@@ -80,6 +96,32 @@ a:focus {
 
 a:active {
     color: orange;
+}
+
+.html5img {
+    width: 200px;
+    height: 200px;
+}
+
+.hrcancunimg {
+    width: 512px;
+    height: 384px;
+    margin: 20px 0px 20px 0px;
+    border: 3px solid lightblue;
+}
+
+.coconutimg {
+    width: 468px;
+    height: 487px;
+    margin: 20px 0px 20px 0px;
+    border: 3px solid lightblue;
+}
+
+.caption {
+    color: hotpink;
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: left;
 }
 
 ol {
