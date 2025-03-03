@@ -28,7 +28,7 @@
 
 <body>
     <header class="HTML_lesson_banner">
-        HTML Gray &nbsp; Lesson 07 &nbsp; Semantic HTML
+        HTML Gray &nbsp; Lesson 08 &nbsp; Tables
         <!-- if using a section must have a h1-h5 or use a div-->
     </header>
 
@@ -106,10 +106,55 @@
                         <summary>
                             Guess the <mark>&nbsp;number of hours &nbsp;</mark> I code per day ?
                         </summary>
-                        <p style="color:lightgray; font-style: italic">I start at <time datetime="08:00" </time> 8 am
-                                and I code for <time datetime="PT3H"></time>3 hours every morning.</p>
+                        <p style="color:lightgray; font-style: italic">I start at <time datetime="08:00"></time>8 am
+                            and I code for <time datetime="PT3H"></time>3 hours every morning.</p>
                     </details>
                 </aside>
+                <br>
+                <table>
+                    <!-- <caption style="font-weight: bold; color:red">My Daily Schedule</caption> -->
+                    <caption class="tableCaption">My Daily Schedule</caption>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Morning</th>
+                            <td> <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time></td>
+                            <td>Write Code</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Break</th>
+                            <td> <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time></td>
+                            <td>Eat Lunch</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Afternoon</th>
+                            <td> <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time></td>
+                            <td>Study for other courses</td>
+                        </tr>
+                        <tr>
+                            <!-- <td colspan="2">Free Time</td> -->
+                            <th scope="row">Evening</th>
+                            <td rowspan="2">All other times</td>
+                            <td>Free Time</td>
+                        <tr>
+                            <th scope="row">Night</th>
+                            <td>Sleep</td>
+                        </tr>
+
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">And that's what I do 5 days a week. Just eat, sleep, code and recharge</td>
+                        </tr>
+                    </tfoot>
+                </table>
             </section>
             <br>
         </article>

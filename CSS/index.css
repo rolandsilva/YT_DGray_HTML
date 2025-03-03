@@ -108,6 +108,29 @@ a:active {
     color: orange;
 }
 
+table,
+tr,
+th,
+td,
+caption {
+    border: 2px solid lightblue;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+
+table,
+th {
+    text-align: center;
+}
+
+.tableCaption {
+    font-weight: bolder;
+    color: red;
+}
+
+
 .html5img {
     width: 200px;
     height: 200px;
