@@ -60,86 +60,106 @@
             <h2>I am ready to learn HTML.</h2>
             <p>This is my first web page.</p>
             <br>
-            <!-- <img src="img/html5 icon.png" alt="HTML5 Icon" title="I am learning HTML5" width="200"
+            <section>
+                <h3>HTML5</h3>
+                <br>
+                <!-- <img src="img/html5 icon.png" alt="HTML5 Icon" title="I am learning HTML5" width="200"
                 height="200"> -->
-            <img class="html5img" src="img/html5_icon.png" alt="HTML5 Icon" title="I am learning HTML5">
-            <figure>
-                <figcaption>
-                    An example of HTML5 code
-                </figcaption>
-                <p>
-                    <code>&lt;h1&gt;Hello World&lt;h1&gt;</code>
-                </p>
-            </figure>
+                <img class="html5img" src="img/html5_icon.png" alt="HTML5 Icon" title="I am learning HTML5">
+                <figure>
+                    <figcaption>
+                        An example of HTML5 code
+                    </figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello World&lt;h1&gt;</code>
+                    </p>
+                </figure>
+            </section>
             <br>
             <br>
 
-            <h3>My Daily Schedule</h3>
-            <!-- <p>Let me tell you how I...
+            <section>
+                <h3>My Daily Schedule</h3>
+                <!-- <p>Let me tell you how I...
             <br>.... I learn more about WebDev.
             <br>.... I plan out my schedule.
             <br>.... I use resources from MDN.
         </p> -->
-            <!-- <p>Let me tell you how I...
+                <!-- <p>Let me tell you how I...
             <br>&nbsp;&nbsp;&nbsp;.... I learn more about WebDev.
             <br>&nbsp;&nbsp;&nbsp;.... I plan out my schedule.
             <br>&nbsp;&nbsp;&nbsp;.... I use resources from <abbr title="Mozilla Developers Network">MDN.</abbr>
         </p> -->
-            <p style="color: green; font-weight: bold; font-style: italic; padding: 0.2rem 0rem;">Let me tell you how:
-            </p>
-            <ol>
-                <li>...I learn more about WebDev.</li>
-                <li>...I plan out my schedule.</li>
-                <li>...I use resources from <abbr title="Mozilla Developers Network"><a href="https://www.mozilla.org">
-                            MDN</a></abbr>.</li>
-            </ol>
+                <p style="color: green; font-weight: bold; font-style: italic; padding: 0.2rem 0rem;">Let me tell you
+                    how:
+                </p>
+                <ol>
+                    <li>...I learn more about WebDev.</li>
+                    <li>...I plan out my schedule.</li>
+                    <li>...I use resources from <abbr title="Mozilla Developers Network"><a
+                                href="https://www.mozilla.org">
+                                MDN</a></abbr>.</li>
+                </ol>
+                <br>
+                <aside>
+                    <details>
+                        <summary>
+                            Guess the <mark>&nbsp;number of hours &nbsp;</mark> I code per day ?
+                        </summary>
+                        <p style="color:lightgray; font-style: italic">I start at <time datetime="08:00" </time> 8 am
+                                and I code for <time datetime="PT3H"></time>3 hours every morning.</p>
+                    </details>
+                </aside>
+            </section>
             <br>
         </article>
 
         <hr>
 
-        <article> id="vacation">
+        <article id="vacation">
             <!-- <section id="vacation"> -->
             <h2>I am also planning a vacation.</h2>
             <p>I've been working hard and <em>really need a getaway.</em></p>
             <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
 
             <br>
-            <h3>Places I'd like to visit.</h3>
-            <ul>
-                <li>
-                    <p>I've heard good things about the <strong>Caribbean</strong>.</p>
-                    <figure>
+            <section>
+                <h3>Places I'd like to visit.</h3>
+                <ul>
+                    <li>
+                        <p>I've heard good things about the <strong>Caribbean</strong>.</p>
+                        <figure>
 
-                        <img src="img/cancunbeach.jpeg" class="hrcancunimg" alt="Picture of Hard Rock Cancun"
-                            loading="lazy">
+                            <img src="img/cancunbeach.jpeg" class="hrcancunimg" alt="Picture of Hard Rock Cancun"
+                                loading="lazy">
 
-                        <figcaption class="caption">
-                            Hard Rock Resort Beach entrance
-                        </figcaption>
+                            <figcaption class="caption">
+                                Hard Rock Resort Beach entrance
+                            </figcaption>
 
-                    </figure>
-                    <br>
-                </li>
+                        </figure>
+                        <br>
+                    </li>
 
-                <li>
-                    <p>I've heard good things about going here:</p>
+                    <li>
+                        <p>I've heard good things about going here:</p>
 
-                    <address>
-                        Cancun Hard Rock Resort<br>
-                        Cancun, Puerto Cancun<br>
-                        Mexico 77580
-                    </address>
+                        <address>
+                            Cancun Hard Rock Resort<br>
+                            Cancun, Puerto Cancun<br>
+                            Mexico 77580
+                        </address>
 
-                    <figure>
-                        <img src="img/mecoconut.jpeg" class="coconutimg" alt="Coconut picture"
-                            title="Me with a coconut by the pool" loading="lazy">
-                        <figcaption class="caption">
-                            Me by the pool with a coconut drink
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>
+                        <figure>
+                            <img src="img/mecoconut.jpeg" class="coconutimg" alt="Coconut picture"
+                                title="Me with a coconut by the pool" loading="lazy">
+                            <figcaption class="caption">
+                                Me by the pool with a coconut drink
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
             <br>
         </article>
 
@@ -149,17 +169,19 @@
 
         <!-- TODO: add more places-->
 
-        <h3>Places I want to avoid.</h3>
-        <dl>
-            <dt>North Pole</dt>
-            <dd>I hear this is <strong>cold</strong></dd>
+        <section>
+            <h3>Places I want to avoid.</h3>
+            <dl>
+                <dt>North Pole</dt>
+                <dd>I hear this is <strong>cold</strong></dd>
 
-            <dt>South Pole</dt>
-            <dd>This is also cold.</dd>
+                <dt>South Pole</dt>
+                <dd>This is also cold.</dd>
 
-            <dt>Mountain Tops</dt>
-            <dd>These are also cold.</dd>
-        </dl>
+                <dt>Mountain Tops</dt>
+                <dd>These are also cold.</dd>
+            </dl>
+        </section>
         <br>
         <hr>
     </main>
