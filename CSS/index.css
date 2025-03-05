@@ -194,3 +194,85 @@ dd {
     margin-left: 10px;
     padding-left: 5px;
 }
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+fieldset {
+    /* text-align: center; */
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    /* margin: 0 auto 1rem auto; */
+}
+
+#firstName::placeholder {
+    color: lightgray;
+    font-weight: bold;
+}
+
+#lastName::placeholder {
+    color: lightgray;
+    font-weight: bold;
+}
+
+#password::placeholder {
+    color: lightgray;
+    font-weight: bold;
+}
+
+#phone::placeholder {
+    color: lightgray;
+    font-weight: bold;
+}
+
+/* #firstName::placeholder {
+    color: red;
+    font-weight: bold;
+}
+
+#lastName::placeholder {
+    color: green;
+    font-weight: bold;
+}
+
+#password::placeholder {
+    color: orange;
+    font-weight: bold;
+}
+
+#phone::placeholder {
+    color: blue;
+    font-weight: bold;
+} */
+
+button {
+    padding: .25rem;
+}
+
+/* .custom-dropdown select {
+    padding: 10px;
+    appearance: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-dropdown::after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+} */
