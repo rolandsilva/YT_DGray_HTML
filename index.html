@@ -28,7 +28,7 @@
 
 <body>
     <header class="HTML_lesson_banner">
-        HTML Gray &nbsp; Lesson 08 &nbsp; Tables
+        HTML Gray &nbsp; Lesson 09 &nbsp; Forms/Input
         <!-- if using a section must have a h1-h5 or use a div-->
     </header>
 
@@ -44,10 +44,13 @@
             <h2 id="primary-navigation">Primary Navigation</h2> -->
             <ul>
                 <li>
-                    <a href="#html">Learning HTML.</a>
+                    <a href="#html">Learning HTML</a>
                 </li>
                 <li>
-                    <a href="#vacation">Planning a vacation.</a>
+                    <a href="#vacation">Planning a vacation</a>
+                </li>
+                <li>
+                    <a href="#Contact">Contact Me</a>
                 </li>
             </ul>
         </nav>
@@ -206,29 +209,81 @@
                 </ul>
             </section>
             <br>
+            <!-- </article> -->
+
+            <hr>
+
+            <br>
+
+            <!-- TODO: add more places-->
+
+            <section>
+                <h3>Places I want to avoid.</h3>
+                <dl>
+                    <dt>North Pole</dt>
+                    <dd>I hear this is <strong>cold</strong></dd>
+
+                    <dt>South Pole</dt>
+                    <dd>This is also cold.</dd>
+
+                    <dt>Mountain Tops</dt>
+                    <dd>These are also cold.</dd>
+                </dl>
+            </section>
         </article>
-
-        <hr>
-
-        <br>
-
-        <!-- TODO: add more places-->
-
-        <section>
-            <h3>Places I want to avoid.</h3>
-            <dl>
-                <dt>North Pole</dt>
-                <dd>I hear this is <strong>cold</strong></dd>
-
-                <dt>South Pole</dt>
-                <dd>This is also cold.</dd>
-
-                <dt>Mountain Tops</dt>
-                <dd>These are also cold.</dd>
-            </dl>
-        </section>
         <br>
         <hr>
+        <br>
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p style="margin-top: 1rem;">I'd really like to hear from you!</p>
+
+            <form action="https://httpin.org/get" method="get">
+                <p><label for="firstName">First Name: </label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required
+                        autofocus>
+                </p>
+                <!-- required = required="true"(default) otherwise default is false -->
+                <!-- only one input per page with autofocus -->
+                <p>
+                    <label for="lastName">Last Name: </label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" placeholder="your secret" required>
+                </p>
+                <p>
+                    <label for="phone">Phone: </label>
+                    <input type="tel" name="phone" id="phone" placeholder="5555555555"
+                        pattern="[0-9]{3}[0-9]{3}-[0-9]{4}" required>
+                </p>
+                <p>
+                    <label for="decade">Favorite Decade: </label>
+                    <input type="number" name="decade" id="decade" min="1950" max="2024" step="10" value="1980">
+                </p>
+                <p>
+                    <label for="coffee">Favorite Coffee</label>
+                    <select name="coffee" id="coffee" multiple size="5">
+                        <optgroup label="Coffees">
+                            <option value="regular coffee">Regular Coffee</option>
+                            <option value="iced coffee">Iced Coffee</option>
+                        </optgroup>
+                        <optgroup label="Lattes">
+                            <option value="latte" selected>Latte</option>
+                            <!-- selected means this is what shows in the select field first -->
+                            <option value="cappuccino">Cappuccino</option>
+                            <option value="cortado">Cortado</option>
+                            <option value="americano">Americano</option>
+                        </optgroup>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+            </form>
+
+
+
+        </article>
     </main>
 
     <footer>
